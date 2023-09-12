@@ -14,9 +14,9 @@ async function buscar(busqueda) {
 function mostrar(data) {
     cont.innerHTML = ""; 
 
-    if (typeof data.name !== 'undefined') {
+    if (data.name) {
             cont.innerHTML = 
-                `<div class="card">
+                `<div>
                     <img src="${data.image}" alt="${data.name}">
                     <p>${data.name}</p>
                 </div>`;
